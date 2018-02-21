@@ -33,6 +33,21 @@
         });
     }
     //END - Floating Countdown 
-```                                                                                         
+``` 
 
-
+                                                                                           
+**Clean Function:**
+```
+    //START - Floating Countdown
+    function floatingCountdown(conteinerBlockClass,countdownConteinerHeight,menuSiteHeight,spaceStartEnd,conteinerCountdownClass,effectSpeed){
+        $(window).scroll(function() {
+            var blockStart = ($(conteinerBlockClass).offset().top - menuSiteHeight);
+            var blockEnd = ($(conteinerBlockClass).height())+($(conteinerBlockClass).offset().top)-(countdownConteinerHeight+menuSiteHeight+(spaceStartEnd*2));
+            
+            if(($(window).scrollTop() > blockStart) && ($(window).scrollTop() <  blockEnd)){
+                    $(conteinerCountdownClass).stop().animate({ top: ($(window).scrollTop()-blockStart)+spaceStartEnd }, effectSpeed);
+            }
+        });
+    }
+    //END - Floating Countdown 
+```        
