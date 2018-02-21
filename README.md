@@ -18,6 +18,7 @@
 **Function:**
 ```
     //START - Floating Countdown
+    //Doc https://github.com/willsouto/Floating-Countdown
     function floatingCountdown(conteinerBlockClass,countdownConteinerHeight,menuSiteHeight,spaceStartEnd,conteinerCountdownClass,effectSpeed){
         $(window).scroll(function() {
             //blockStart > Conteiner father shows up on screen
@@ -39,6 +40,7 @@
 **Clean Function:**
 ```
     //START - Floating Countdown
+    //Doc https://github.com/willsouto/Floating-Countdown                                                        
     function floatingCountdown(conteinerBlockClass,countdownConteinerHeight,menuSiteHeight,spaceStartEnd,conteinerCountdownClass,effectSpeed){
         $(window).scroll(function() {
             var blockStart = ($(conteinerBlockClass).offset().top - menuSiteHeight);
@@ -51,3 +53,4 @@
     }
     //END - Floating Countdown 
 ```        
+
